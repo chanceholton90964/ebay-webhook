@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: ebay-webhook
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:app
+    envVars:
+      - key: VERIFICATION_TOKEN
+        value: mytoken123
+      - key: ENDPOINT_URL
+        value: https://your-app-name.onrender.com/ebay-webhook
