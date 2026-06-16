@@ -6,6 +6,6 @@ services:
     startCommand: gunicorn app:app
     envVars:
       - key: VERIFICATION_TOKEN
-        value: mytoken123
+        value: mYt0k3nS3cur3eBayW3bh00k2024xZ
       - key: ENDPOINT_URL
         value: https://ebay-webhook.onrender.com/ebay-webhook
